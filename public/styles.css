@@ -1,0 +1,113 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.sidebar{
+    width: 400px;
+    background: grey;
+    height: 100%;
+}
+#sidebar-title{
+    color: white;
+}
+#text-messages {
+    list-style-type: none;
+    padding: 10px 10px;
+    margin: 0;
+}
+#text-messages > li{
+    font-size: 20px;
+    
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+    font-style: italic;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 5px;
+}
+.notmymessage{
+    border-radius: 15px 0 15px 15px;
+    background: wheat;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mymessage{
+    border-radius: 0 15px 15px 15px;
+    background: white;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.board {
+    
+    margin: auto;
+    width: 350px;
+}
+.board button {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+#messages{
+    font-size: 30px;
+}
+
+#restart{
+    align-self: center;
+    padding: 20px 100px;
+    border: 2px solid black;
+    color: white;
+    background: black;
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+#restart:hover{
+    opacity: 0.8;
+}
+
+#input-div{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: grey;
+    overflow: none;
+}
+#input{
+    width: 85%;
+    border-radius: 5px 5px;
+    border: none;
+    outline: none;
+}
+#input:focus{
+    border-radius: 5px 5px;
+    border: none ;
+    outline: none important!;
+}
+#send{
+    width: 10%;
+    padding: 10px 30px;
+    outline: none;
+    margin-left: 4px;
+    border-radius: 5px 5px;
+    border: none;
+}
