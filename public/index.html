@@ -2,17 +2,7 @@
 <html>
     <head>
         <link rel="icon" href="assets/favicon.png">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-        <script>
-            tinymce.init({
-              selector: "#input",
-              plugins: "emoticons",
-              toolbar: "emoticons",
-              toolbar_location: "right",
-              menubar: false
-            });
-          </script>
+        <link rel="stylesheet" href="styles.css">        
     </head>
     <body>
         <div class="container">
@@ -22,13 +12,13 @@
 
                 </ul>
                 <div id="input-div">
-                    <input type="text" id="input" required placeholder="chat with player...">
+                    <input type="text" id="input" required  placeholder="chat while playing..." >
                      <button id="send">send</button>
                 </div>
                 
             </div>
             <div class="board">
-                <div id="restart" >Play Again</div>
+                <div id="restart" hidden="true">Play Again</div>
     
                 <button id="a0"></button>
                 <button id="a1"></button>
@@ -43,7 +33,7 @@
                 <div id="messages">Waiting for opponent to join ⛔️</div>
             </div>
         </div>
-       
+        
         <script src="/socket.io/socket.io.js"></script>
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script>

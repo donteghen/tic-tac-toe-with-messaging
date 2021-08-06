@@ -70,13 +70,14 @@ p{
 }
 
 #restart{
-    align-self: center;
-    padding: 20px 100px;
+    width: 100px;
+    padding: 10px 70px;
     border: 2px solid black;
     color: white;
     background: black;
-    margin-bottom: 50px;
-    font-size: 26px;
+    margin-bottom: 30px;
+   
+    font-size: 20px;
 }
 #restart:hover{
     opacity: 0.8;
@@ -97,6 +98,7 @@ p{
     border-radius: 5px 5px;
     border: none;
     outline: none;
+    
 }
 #input:focus{
     border-radius: 5px 5px;
