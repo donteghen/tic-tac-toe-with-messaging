@@ -6,7 +6,9 @@ var express = require('express'),
     server, io;
 
 app.use(express.static(path.join(__dirname, 'public')))
-
+app.get('/**', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+})
 server = http.Server(app);
 server.listen(8080);
 
