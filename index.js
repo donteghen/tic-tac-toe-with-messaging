@@ -4,13 +4,14 @@ var express = require('express'),
     http = require('http'),
     socketIO = require('socket.io'),
     server, io;
+    port = process.env.PORT || 8080;
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.get('/**', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 server = http.Server(app);
-server.listen(8080);
+server.listen(port);
 
 io = socketIO(server);
 
