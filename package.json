@@ -1,4 +1,8 @@
 {
+  "name": "tic-tac-toe-chat",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe game with chat features",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
