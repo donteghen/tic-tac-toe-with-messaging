@@ -153,21 +153,7 @@
             // we can assume it is their turn
             myTurn = (data.symbol !== symbol);
             
-            // If the game is still going, show who's turn it is
-            //if the game is draw
-             if (isDraw()) {
-                // If the game is over
-                $('#restart').removeAttr('hidden')
-                // Display draw game for both players
-                $('#messages').text('It\'s a draw\nGo Again👏🏿');
-                // Disable the board
-                $('.board button').attr('disabled', true);
-            }
-            else if (!isGameOver()) {
-                renderTurnMessage();
-            } 
-            
-            else {
+            if (isGameOver()) {
                 // If the game is over
                 $('#restart').removeAttr('hidden')
                 // Show the message for the loser
@@ -181,6 +167,22 @@
 
                 // Disable the board
                 $('.board button').attr('disabled', true);
+                
+            } 
+            // If the game is still going, show who's turn it is
+            //if the game is draw
+            else if (isDraw()) {
+                // If the game is over
+                $('#restart').removeAttr('hidden')
+                // Display draw game for both players
+                $('#messages').text('It\'s a draw\nGo Again👏🏿');
+                // Disable the board
+                $('.board button').attr('disabled', true);
+            }
+            
+            
+            else {
+                renderTurnMessage();
             }
         });
 
